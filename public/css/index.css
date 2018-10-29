@@ -1,0 +1,29 @@
+body {
+  /* background-color: black; */
+  color: white;
+  background-image: url("https://media.giphy.com/media/xUA7bgZ6j6wfPjkYla/source.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  padding: 8em;
+  color: white;
+  margin-top: -55px;
+  background-color: transparent;
+}
+
+#username {
+  width: 400px;
+}
+
+.navbar {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bold_heading {
+  font-size: 50px;
+  font-weight: 1000
+}

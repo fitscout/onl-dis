@@ -1,0 +1,15 @@
+.gif_container{
+  display:grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+}
+.gif{
+  cursor: pointer;
+}
+
+body{
+  color:white;
+  background-image:url("https://cdn.discordapp.com/attachments/505452573373759508/506484829366386719/5.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,44 @@
+<%- include ./partials/header.ejs %>
+<div class="grid-container">
+  <div class="container-1">
+    <div class="player">
+      <div class="welcome">
+        <img src="https://media.discordapp.net/attachments/505452573373759508/506278399900123136/logo_2.png" width="300">
+      </div>
+      <div class="musicPlayer">
+        <%- include ./fm.ejs %>
+      </div>
+    </div>
+    <div class="danceFloor">
+      <h1>Dancefloor</h1>
+      <%- include ./danceFloor.ejs %>
+    </div>
+  </div>
+  <div class="container-2">
+    <div class="greetings">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1>Greetings</h1>
+        </div>
+        <div class="col-sm-2 mt-1">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Send Greetings</button>
+        </div>
+        <%- include ./greetingsModal.ejs %>
+      </div>
+      <p id="greeting_message">Greetings Queue is Empty! </p>
+    </div>
+    <div class="schedule">
+      <h1>Schedule</h1>
+      <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>wednesday</li>
+      </ul>
+    </div>
+    <div class="chat">
+      <h1>Live Chat</h1>
+      <%-include ./chat.ejs%>
+    </div>
+  </div>
+</div>
+<%- include ./partials/footer.ejs %>

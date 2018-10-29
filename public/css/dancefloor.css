@@ -1,0 +1,14 @@
+.danceFloor{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  /* overflow:scroll; */
+}
+
+.heading{
+  color:white;
+  font-size: 20px;
+}
+
+#gif_image{
+  height:165px;
+}
