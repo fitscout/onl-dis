@@ -1,6 +1,6 @@
 .gif_container{
   display:grid;
-  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-columns: 280px 280px 280px 280px 280px;
 }
 .gif{
   cursor: pointer;
