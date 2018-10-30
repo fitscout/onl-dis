@@ -1,1 +1,1 @@
-let socket = io('https://thebestdanceapp.herokuapp.com/dancefloor');
+let socket = io('https://online-diskoteka.herokuapp.com/dancefloor');
