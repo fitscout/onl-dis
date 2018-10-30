@@ -6,7 +6,20 @@
         <img src="https://media.discordapp.net/attachments/505452573373759508/506278399900123136/logo_2.png" width="300">
       </div>
       <div class="musicPlayer">
-        <%- include ./fm.ejs %>
+          <div><img src="https://media0.giphy.com/media/fea68JY4vdJFLnFjoV/giphy.gif?cid=3640f6095bd78c347769546f73b63c02" <="" img="" style="
+            margin-top: 0px;
+            width: 200px;
+            position: absolute;
+            margin-left: 2-px;
+            margin-left: -30px;
+        "></div>
+       <div><div data-video="F3QUSDLQ240"  
+        data-autoplay="1"         
+        data-loop="1"             
+        id="youtube-audio">
+ </div>
+ <script src="https://www.youtube.com/iframe_api"></script>
+ <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script></div>
       </div>
     </div>
     <div class="danceFloor">
@@ -18,25 +31,29 @@
     <div class="greetings">
       <div class="row">
         <div class="col-sm-3">
-          <h1>Greetings</h1>
+          <h1>Поздрави</h1>
         </div>
         <div class="col-sm-2 mt-1">
-          <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Send Greetings</button>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Изпрати поздрав.</button>
         </div>
         <%- include ./greetingsModal.ejs %>
       </div>
-      <p id="greeting_message">Greetings Queue is Empty! </p>
+      <p id="greeting_message">Вмомента няма поздрави. </p>
     </div>
     <div class="schedule">
-      <h1>Schedule</h1>
+      <h1>Програма</h1>
       <ul>
-        <li>Monday</li>
-        <li>Tuesday</li>
-        <li>wednesday</li>
+        <li>Понеделник: Поп-фолк</li>
+        <li>Вторник: Поп-Фолк</li>
+        <li>Сряда: Black Party</li>
+        <li>Четвъртак: Rock Party</li>
+        <li>Петък: Поп-Фолк</li>
+        <li>Събота: Mix Party</li>
+        <li>Неделя: House Party</li>
       </ul>
     </div>
     <div class="chat">
-      <h1>Live Chat</h1>
+      <h1>Онлайн Чат</h1>
       <%-include ./chat.ejs%>
     </div>
   </div>

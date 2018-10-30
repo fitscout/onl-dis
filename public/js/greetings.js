@@ -8,7 +8,7 @@ let sendBtn = document.getElementById("send_greet");
 
 sendBtn.addEventListener('click',(e)=>{
   if(greet_to.value == "" || greet_message == ""){
-    alert("Please fill up required details to send a greeting");
+    alert("Попълни необходимите полета за да продълиш.");
   }else{
     let greeting_data = {
       from:greet_from,
@@ -26,7 +26,7 @@ sendBtn.addEventListener('click',(e)=>{
 // Recieve Greetings
  socket.on('new_greet', (data) => {
   try{
-     $('#greeting_message').html(`<b>${data.greets.greeting_data.from}</b> sent greetings to <b>${data.greets.greeting_data.to}</b> : <b>${data.greets.greeting_data.message}</b>`)
+     $('#greeting_message').html(`<b>${data.greets.greeting_data.from}</b></br> поздравява </br> <b>${data.greets.greeting_data.to}</b> </br> ${data.greets.greeting_data.message}`)
   }
   catch(err){
    return;

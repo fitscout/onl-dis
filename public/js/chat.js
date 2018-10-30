@@ -20,7 +20,7 @@ messageData.addEventListener("keyup", function (event) {
 
 sendBtn_chat.addEventListener('click', (e) => {
   if (messageData.value == "") {
-    alert("You must enter something");
+    alert("Трябва да напишеш нещо");
   } else {
     socket.emit("messageSent", {
       message: messageData.value,

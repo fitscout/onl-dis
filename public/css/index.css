@@ -2,9 +2,9 @@ body {
   /* background-color: black; */
   color: white;
   background-image: url("https://media.giphy.com/media/xUA7bgZ6j6wfPjkYla/source.gif");
-  background-size: cover;
+  background-size: auto;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .jumbotron {

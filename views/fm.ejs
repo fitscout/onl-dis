@@ -1,6 +1,15 @@
 
-<script type="text/javascript">var cstrpuid =  "481779";var cstrpwidth = "500";var cstrpheight = "200";</script>
-<script type="text/javascript" src="https://cdn.caster.fm/0070B7/widgets/player.js"></script>
-<!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   -->
-<a id="cstrplb" href="https://www.caster.fm/">Free Shoutcast Hosting</a><a id="cstrplb2" href="https://www.caster.fm/">Radio Stream Hosting</a>
-<div id="cstrpdiv"></div>
+<audio id="player" controls></audio>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var streamURL = "http://shaincast.caster.fm:38744/listen.mp3?authnfe22a0a56580d7fdb78b0e91ba75f643";
+    var player = document.getElementById("player");
+    player.addEventListener("play", function () {
+        $("#player").append('<source id="source" src="' + streamURL + '" type="audio/mpeg">');
+        player.addEventListener("pause", function () {
+            $('#source').remove();
+        });
+    });
+});
+</script>

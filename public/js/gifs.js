@@ -27,7 +27,7 @@ function registerGif(e){
     gif:user_gif_src,
     username:username
   }
-  let lock_gifs = confirm("Are you sure you want to use this gif?")
+  let lock_gifs = confirm("Сигурен ли си , че ще танцуваш така ? 0_о")
   if(lock_gifs){
     localStorage.setItem('UserData', JSON.stringify(userData));
     window.location = '/dancefloor'

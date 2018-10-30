@@ -1,6 +1,6 @@
 .gif_container{
   display:grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-columns: 100px 100px 100px 100px 100px;
 }
 .gif{
   cursor: pointer;
@@ -12,4 +12,5 @@ body{
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 455px
 }
