@@ -3,7 +3,7 @@
   <div class="container-1">
     <div class="player">
       <div class="welcome">
-        <img src="https://media.discordapp.net/attachments/505452573373759508/506278399900123136/logo_2.png" width="300">
+        <img src="http://r52.cooltext.com/rendered/cooltext305879550912049.png" width="300">
         <a title="Share" href="https://www.facebook.com/sharer/sharer.php?u=www.discolive.tk" target="_blank" rel="noopener"><img src="https://i.pinimg.com/originals/23/b7/d0/23b7d045f7cdf8fc7271a588afd6565e.png" alt="share" width="129" height="42" /></a>
         <a title="Гласувай за да е по-забавно" href="https://bgtop.net/vote/1542206535" target="_blank" rel="noopener"><img src="https://bgtop.net/images/logos/bg_top_logo43.gif" alt="Гласувай за да е по-забавно" width="50" height="15" /></a>        
 <p><strong><span style="color: #ffffff;">Сподели във фейсбук и гласувай в bgtop.</span></strong></p>
@@ -44,17 +44,57 @@
       <p id="greeting_message">Вмомента няма поздрави. </p>
     </div>
     <div class="schedule">
-      <h1>Програма</h1>
-      <ul>
-        <li>Понеделник: Поп-фолк</li>
-        <li>Вторник: Поп-Фолк</li>
-        <li>Сряда: Black Party</li>
-        <li>Четвъртак: Rock Party</li>
-        <li>Петък: Поп-Фолк</li>
-        <li>Събота: Mix Party</li>
-        <li>Неделя: House Party</li>
-      </ul>
-    </div>
+      <style style="text/css">
+  .scroll-left {
+   height: 50px;	
+   overflow: hidden;
+   position: relative;
+  }
+  .scroll-left p {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   line-height: 50px;
+   text-align: center;
+   /* Starting position */
+   -moz-transform:translateX(100%);
+   -webkit-transform:translateX(100%);	
+   transform:translateX(100%);
+   /* Apply animation to this element */	
+   -moz-animation: scroll-left 10s linear infinite;
+   -webkit-animation: scroll-left 10s linear infinite;
+   animation: scroll-left 10s linear infinite;
+  }
+  /* Move it (define the animation) */
+  @-moz-keyframes scroll-left {
+   0%   { -moz-transform: translateX(100%); }
+   100% { -moz-transform: translateX(-100%); }
+  }
+  @-webkit-keyframes scroll-left {
+   0%   { -webkit-transform: translateX(100%); }
+   100% { -webkit-transform: translateX(-100%); }
+  }
+  @keyframes scroll-left {
+   0%   { 
+   -moz-transform: translateX(100%); /* Browser bug fix */
+   -webkit-transform: translateX(100%); /* Browser bug fix */
+   transform: translateX(100%); 		
+   }
+   100% { 
+   -moz-transform: translateX(-100%); /* Browser bug fix */
+   -webkit-transform: translateX(-100%); /* Browser bug fix */
+   transform: translateX(-100%); 
+   }
+  }
+  </style>
+  
+  <div class="scroll-left">
+  <p>РЕКЛАМА: www.tanciorkite.com / Стриптизьорки и стриптизьори за вашето ергенско или моминско парти </p>
+  </div>
+  
+        <h1></h1>
+        <img src="http://corz.org/windows/software/ffe/files/Drop-Window%20Transparent%20Images/Animated%20Gifs/3D_Animated_Dancing_Girl.gif" <="" img=""></div>
     <div class="chat">
       <h1>Онлайн Чат</h1>
       <%-include ./chat.ejs%>
